@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DisplayViewController.swift
 //  drawOnImage
 //
 //  Created by macOS on 10/14/19.
@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DisplayViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    var image : UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        imageView.image = image!
     }
+    
+
 
 
 }
-

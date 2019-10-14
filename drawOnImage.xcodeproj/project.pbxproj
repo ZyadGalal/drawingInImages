@@ -13,6 +13,10 @@
 		22A9EB45235453370030E78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A9EB43235453370030E78B /* Main.storyboard */; };
 		22A9EB47235453390030E78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A9EB46235453390030E78B /* Assets.xcassets */; };
 		22A9EB4A235453390030E78B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A9EB48235453390030E78B /* LaunchScreen.storyboard */; };
+		22A9EB5223545EF40030E78B /* ZoomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9EB5123545EF40030E78B /* ZoomingViewController.swift */; };
+		22A9EB54235468FF0030E78B /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9EB53235468FF0030E78B /* DisplayViewController.swift */; };
+		22A9EB56235469F50030E78B /* UIView + UIImageView Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9EB55235469F50030E78B /* UIView + UIImageView Extensions.swift */; };
+		22A9EB5823546B5E0030E78B /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9EB5723546B5E0030E78B /* MainScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		22A9EB46235453390030E78B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A9EB49235453390030E78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A9EB4B235453390030E78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A9EB5123545EF40030E78B /* ZoomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomingViewController.swift; sourceTree = "<group>"; };
+		22A9EB53235468FF0030E78B /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		22A9EB55235469F50030E78B /* UIView + UIImageView Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + UIImageView Extensions.swift"; sourceTree = "<group>"; };
+		22A9EB5723546B5E0030E78B /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		22A9EB3C235453370030E78B /* drawOnImage */ = {
 			isa = PBXGroup;
 			children = (
+				22A9EB5A235471510030E78B /* withZoomingViewController */,
+				22A9EB59235471340030E78B /* withoutZoomingViewController */,
 				22A9EB3D235453370030E78B /* AppDelegate.swift */,
 				22A9EB3F235453370030E78B /* SceneDelegate.swift */,
-				22A9EB41235453370030E78B /* ViewController.swift */,
 				22A9EB43235453370030E78B /* Main.storyboard */,
 				22A9EB46235453390030E78B /* Assets.xcassets */,
 				22A9EB48235453390030E78B /* LaunchScreen.storyboard */,
 				22A9EB4B235453390030E78B /* Info.plist */,
+				22A9EB53235468FF0030E78B /* DisplayViewController.swift */,
+				22A9EB55235469F50030E78B /* UIView + UIImageView Extensions.swift */,
+				22A9EB5723546B5E0030E78B /* MainScreenViewController.swift */,
 			);
 			path = drawOnImage;
+			sourceTree = "<group>";
+		};
+		22A9EB59235471340030E78B /* withoutZoomingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22A9EB41235453370030E78B /* ViewController.swift */,
+			);
+			path = withoutZoomingViewController;
+			sourceTree = "<group>";
+		};
+		22A9EB5A235471510030E78B /* withZoomingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22A9EB5123545EF40030E78B /* ZoomingViewController.swift */,
+			);
+			path = withZoomingViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A9EB56235469F50030E78B /* UIView + UIImageView Extensions.swift in Sources */,
+				22A9EB5823546B5E0030E78B /* MainScreenViewController.swift in Sources */,
+				22A9EB54235468FF0030E78B /* DisplayViewController.swift in Sources */,
+				22A9EB5223545EF40030E78B /* ZoomingViewController.swift in Sources */,
 				22A9EB42235453370030E78B /* ViewController.swift in Sources */,
 				22A9EB3E235453370030E78B /* AppDelegate.swift in Sources */,
 				22A9EB40235453370030E78B /* SceneDelegate.swift in Sources */,
